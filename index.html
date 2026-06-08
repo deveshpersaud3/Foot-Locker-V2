@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot Locker Canada</title>
+    <title>Foot Locker Canada | Premium Vault</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -14,7 +14,7 @@
             <a href="#">Français</a>
         </div>
         <div class="utility-right">
-            <a href="#"><i class="fas fa-map-marker-alt"></i> Find a Store</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Find a Store: Whitby</a>
             <a href="#">Help</a>
             <a href="#">Track Order</a>
             <a href="#">Sign In / Register</a>
@@ -33,7 +33,7 @@
             
             <div class="search-container">
                 <div class="search-box">
-                    <input type="text" placeholder="Search">
+                    <input type="text" placeholder="Search brands, models, or items...">
                     <i class="fas fa-search"></i>
                 </div>
             </div>
@@ -64,23 +64,32 @@
 
     <section class="hero-banner">
         <div class="hero-content">
-            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Hero Campaign">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Hero Campaign">
             <div class="hero-text-overlay">
-                <h2>THE LATEST DROPS</h2>
-                <p>Secure the hottest releases of the season.</p>
+                <h2>P32 CIRCUIT EXCLUSIVES</h2>
+                <p>Elite performance gear. Built for the next level.</p>
                 <div class="hero-buttons">
-                    <button class="btn-solid">Shop Men's</button>
-                    <button class="btn-solid">Shop Women's</button>
+                    <button class="btn-solid">Shop Footwear</button>
+                    <button class="btn-solid">Shop Apparel</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="product-section">
-        <div class="section-heading">
-            <h3>Trending Now</h3>
+    <section class="brand-filter-section">
+        <div class="brand-filters" id="brand-filters">
+            <button class="brand-btn active" data-brand="All">Shop All</button>
+            <button class="brand-btn" data-brand="Nike">Nike</button>
+            <button class="brand-btn" data-brand="Jordan">Jordan</button>
+            <button class="brand-btn" data-brand="Yeezy">Yeezy</button>
+            <button class="brand-btn" data-brand="New Balance">New Balance</button>
+            <button class="brand-btn" data-brand="Bape">Bape</button>
+            <button class="brand-btn" data-brand="Essentials">Essentials</button>
         </div>
-        
+        <div class="inventory-count"><span id="total-items">0</span> Results</div>
+    </section>
+
+    <section class="product-section">
         <div class="product-grid" id="product-grid">
             </div>
     </section>
