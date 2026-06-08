@@ -3,76 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot Locker Clone</title>
+    <title>Foot Locker Canada</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Utility Bar -->
     <div class="utility-bar">
         <div class="utility-left">
-            <a href="#"><i class="fas fa-map-marker-alt"></i> Find a Store</a>
+            <a href="#">Français</a>
         </div>
         <div class="utility-right">
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Find a Store</a>
             <a href="#">Help</a>
-            <a href="#">Order Status</a>
-            <a href="#">FLX Rewards</a>
-            <a href="#">Sign In</a>
+            <a href="#">Track Order</a>
+            <a href="#">Sign In / Register</a>
         </div>
     </div>
 
-    <!-- Main Navigation -->
     <header class="main-header">
         <div class="header-container">
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <div class="logo">
                 <h1>FOOT LOCKER</h1>
             </div>
             
-            <nav class="main-nav">
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
-                <a href="#">Clothing</a>
-                <a href="#" class="sale-link">Sale</a>
-                <a href="#">Releases</a>
-            </nav>
-
-            <div class="header-actions">
+            <div class="search-container">
                 <div class="search-box">
                     <input type="text" placeholder="Search">
                     <i class="fas fa-search"></i>
                 </div>
-                <a href="#" class="cart-icon">
+            </div>
+
+            <div class="header-actions">
+                <a href="#" class="icon-link"><i class="far fa-user"></i></a>
+                <a href="#" class="icon-link cart-icon">
                     <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
                 </a>
             </div>
         </div>
+        
+        <nav class="main-nav">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Brands</a>
+            <a href="#">Clothing</a>
+            <a href="#">Releases</a>
+            <a href="#" class="sale-link">Sale</a>
+        </nav>
     </header>
 
-    <!-- Hero Banner -->
+    <div class="promo-strip">
+        <p>FREE SHIPPING ON ORDERS OVER $99* <a href="#">Details</a></p>
+    </div>
+
     <section class="hero-banner">
-        <div class="hero-text">
-            <h2>SUMMER HEAT</h2>
-            <p>The freshest drops from Nike, Jordan, and adidas.</p>
-            <div class="hero-buttons">
-                <button class="btn-primary">Shop Men's</button>
-                <button class="btn-primary">Shop Women's</button>
+        <div class="hero-content">
+            <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Hero Campaign">
+            <div class="hero-text-overlay">
+                <h2>THE LATEST DROPS</h2>
+                <p>Secure the hottest releases of the season.</p>
+                <div class="hero-buttons">
+                    <button class="btn-solid">Shop Men's</button>
+                    <button class="btn-solid">Shop Women's</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Product Carousel Section -->
     <section class="product-section">
         <div class="section-heading">
-            <h3>New Arrivals</h3>
-            <a href="#" class="shop-all">Shop All</a>
+            <h3>Trending Now</h3>
         </div>
         
         <div class="product-grid" id="product-grid">
-            <!-- JS will inject items here -->
-        </div>
+            </div>
     </section>
+
+    <div id="quick-view-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Product Image">
+                </div>
+                <div class="modal-details">
+                    <h4 id="modal-brand" class="brand"></h4>
+                    <h2 id="modal-name" class="name"></h2>
+                    <div id="modal-price" class="price"></div>
+                    
+                    <div class="size-selector">
+                        <p>Select Size</p>
+                        <div class="sizes">
+                            <span>8</span><span>8.5</span><span>9</span><span>9.5</span><span>10</span><span>10.5</span><span>11</span><span>12</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-solid add-to-cart-btn" id="modal-add-to-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
