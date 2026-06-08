@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Locker Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+        <div class="utility-left">
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Find a Store</a>
+        </div>
+        <div class="utility-right">
+            <a href="#">Help</a>
+            <a href="#">Order Status</a>
+            <a href="#">FLX Rewards</a>
+            <a href="#">Sign In</a>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>FOOT LOCKER</h1>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Clothing</a>
+                <a href="#" class="sale-link">Sale</a>
+                <a href="#">Releases</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-text">
+            <h2>SUMMER HEAT</h2>
+            <p>The freshest drops from Nike, Jordan, and adidas.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Shop Men's</button>
+                <button class="btn-primary">Shop Women's</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Carousel Section -->
+    <section class="product-section">
+        <div class="section-heading">
+            <h3>New Arrivals</h3>
+            <a href="#" class="shop-all">Shop All</a>
+        </div>
+        
+        <div class="product-grid" id="product-grid">
+            <!-- JS will inject items here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
